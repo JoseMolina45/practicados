@@ -30,6 +30,11 @@ body {
     color: var(--secondary-color);
 }
 
+.title-main {
+    padding-top: 20px;
+    text-align: center;
+}
+
 .card-in {
     display: flex;
     flex-direction: row;
@@ -62,6 +67,15 @@ body {
     font-size: 18px;
 }
 
-.button-card:hover {
+.button-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.button-card a:hover {
     font-size: 25px;
 }
