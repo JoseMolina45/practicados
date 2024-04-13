@@ -1,0 +1,41 @@
+.format-code button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+}
+
+
+#openWin {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 650px;
+    transform: translateX(-50%);
+    opacity: 0;
+    
+}
+
+#openWin img {
+    padding-top: 10px;
+}
+
+.view {
+    background-color: var(--tertiary-color);
+    width: 400px;
+    margin: 40px;
+    border-radius: 5px;
+    padding: 15px;
+    opacity: 1 !important;
+}
+
+.view button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+}

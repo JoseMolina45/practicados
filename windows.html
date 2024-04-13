@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Ventanas con HTML</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/windows.css" />
+    <script src="./js/window.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+           <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</span></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><span class="inactivo">Ventanas</span></li>
+                <li><a href="acordeon.html">Código</a></li>
+                <li><a href="acordeon.html">Código</a></li>
+           </ul>
+        </div>
+    </header>
+    <main>
+        <h1 class="title-main">Creando ventanas con HTML</h1>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!</p>
+        <div class="format-code">
+            <h4>Producto: PANEL SOLAR 550W</h4>
+            <hr>
+            <p><strong>Potencia: </strong>550w.</p>
+            <p><strong>Dimensiones: </strong>2278x1134mm</p>
+            <p><strong>Eficiencia: </strong>22,5%</p>
+            <p><strong>Peso:</strong> 32 Kg.</p>
+            <h4 class="code-h4">Ver caracteristicas</h4>
+            <hr>
+            <button id="Open-window" onclick="openWindow()">Ver foto</button>
+        </div>
+        <div id="openWin" class="">
+            <h4>Fotos del producto</h4>
+            <hr>
+            <img src="./img/placa-solar-bifacial-580w-ja-solar-mono_thumb_main.jpg" />
+            <button id="close-window" onclick="closeWindow()">Cerrar foto</button>
+        </div>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!</p>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias, totam fugiat facilis vitae saepe iure similique ex mollitia laboriosam, cupiditate dolor sit dicta modi beatae dignissimos aspernatur repudiandae commodi.</p>
+    </main>
+</body>
+</html>
