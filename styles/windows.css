@@ -39,3 +39,25 @@
     transform: translateX(-50%);
     background-color: var(--primary-color);
 }
+
+@media(max-width: 400px) {
+    .view {
+        background-color: var(--tertiary-color);
+        width: 280px;
+        margin: 20px;
+        border-radius: 5px;
+        padding: 15px;
+        opacity: 1 !important;
+    }
+
+    #openWin {
+        z-index: 1;
+        position: absolute;
+        top: 50px;
+        left: 180px;
+        transform: translateX(-50%);
+        opacity: 0;
+        
+    }
+
+}

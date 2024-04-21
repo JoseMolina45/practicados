@@ -6,12 +6,18 @@
     <title>Crear Ventanas con HTML</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/windows.css" />
-    <script src="./js/window.js"></script>
+    <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <header>
-        <div class="menu">
-           <ul>
+        <!-- main menu -->
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </div>
+        <nav class="menu">
+            <ul id="menu-click" class="">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="menu.html">Menú</span></li>
                 <li><a href="gallery.html">Galería</a></li>
@@ -19,7 +25,8 @@
                 <li><a href="carrusel.html">Carrusel</a></li>
                 <li><a href="acordeon.html">Código</a></li>
            </ul>
-        </div>
+        </nav>
+        <!-- End main menu -->
     </header>
     <main>
         <h1 class="title-main">Creando ventanas con HTML</h1>
@@ -44,5 +51,9 @@
         <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!</p>
         <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias, totam fugiat facilis vitae saepe iure similique ex mollitia laboriosam, cupiditate dolor sit dicta modi beatae dignissimos aspernatur repudiandae commodi.</p>
     </main>
+    <footer>
+        <p>2024 HTML, CSS Práctica</p>
+    </footer>
+    <!-- End footer zone -->
 </body>
 </html>

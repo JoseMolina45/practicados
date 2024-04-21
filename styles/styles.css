@@ -31,7 +31,7 @@ body {
     list-style-type: none;
 }
 
-.inactivo {
+.idle {
     color: var(--secondary-color);
 }
 
@@ -104,4 +104,126 @@ a:hover {
 
 .code-h4 {
     margin-top: 10px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    z-index: 2;
+    display: none;
+}
+section p {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    font-size: 20px;
+
+}
+
+footer {
+    position: fixed;
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 30px;
+    bottom: 0;
+    color: white;
+}
+
+footer p {
+    padding: 10px;
+    
+    
+}
+
+@media(max-width: 1024px)  {
+    .card-in {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 25%; 
+    }
+
+    .format-code {
+        background-color: var(--tertiary-color);
+        width: 300px;
+        margin: 20px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .menu-btn {
+        display: block;
+        
+    }
+
+    .menu ul {
+        background-color: var(--secondary-color);
+        display: block;
+        height: 100%;
+        position: absolute;
+        left:  0;
+        top: 0;
+        opacity: 0.9;
+        transform: translateX(-100px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .menu ul li {
+        display: block;
+        padding: 20px;   
+    }
+
+    .menu-show {
+        transform: translateX(0px) !important;
+    }
+   
+}
+
+@media(max-width: 400px)  {
+    .card-in {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 2%; 
+    }
+
+    .format-code {
+        background-color: var(--tertiary-color);
+        width: 300px;
+        margin: 20px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .menu-btn {
+        display: block;
+        
+    }
+
+    .menu ul {
+        background-color: var(--secondary-color);
+        display: block;
+        height: 100%;
+        position: absolute;
+        left:  0;
+        top: 0;
+        opacity: 0.9;
+        transform: translateX(-100px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .menu ul li {
+        display: block;
+        padding: 20px;   
+    }
+
+    .menu-show {
+        transform: translateX(0px) !important;
+    }
+
+    
 }

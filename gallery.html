@@ -6,11 +6,17 @@
     <title>Galería de imagenes</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/scripts.js"></script>
 </head>
 <body>
     <header>
-        <div class="menu">
-            <ul>
+        <!-- main menu -->
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </div>
+        <nav class="menu">
+            <ul id="menu-click" class="">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="menu.html">Menú</a></li>
                 <li><span class="inactivo">Galería</span></li>
@@ -18,9 +24,11 @@
                 <li><a href="carrusel.html">Carrusel</a></li>
                 <li><a href="acordeon.html">Código</a></li>
            </ul>
-        </div>
+        </nav>
+        <!-- End main menu -->
     </header>
     <main class="center">
+        <!-- gallery zone -->
         <h1 class="title-main">Una galería de imagenes</h1>
         <div class="gallery">
             <ul class="slider">
@@ -29,7 +37,7 @@
                 <li id="photo3"><img src="./img/escena-negocios-futurista-ambiente-ultra-moderno.jpg" /></li>
                 <li id="photo4"><img src="./img/mano-futurista-trabajando-computadora-portatil.jpg" /></li>
             </ul>
-            <nav>
+            <nav class="nav">
                 <ul class="slider-menu">
                     <li><a href="#photo1">Foto 1</a></li>
                     <li><a href="#photo2">Foto 2</a></li>
@@ -39,5 +47,11 @@
             </nav>
         </div>
     </main>
+     <!-- End gallery zone -->
+    <!-- footer zone-->
+    <footer>
+        <p>2024 HTML, CSS Práctica</p>
+    </footer>
+    <!-- End footer zone -->
 </body>
 </html>

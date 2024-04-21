@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Dos</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/scripts.js"></script>
 </head>
 <body>
     <header>
-        <div class="menu">
-           <ul>
-                <li><span class="inactivo">Inicio</span></li>
+        <!-- main menu -->
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </div>
+        <nav class="menu">
+            <ul id="menu-click" class="">
+                <li><span class="idle">Inicio</span></li>
                 <li><a href="menu.html">Menú</a></li>
                 <li><a href="gallery.html">Galería</a></li>
                 <li><a href="windows.html">Ventanas</a></li>
                 <li><a href="carrusel.html">Carrusel</a></li>
                 <li><a href="acordeon.html">Código</a></li>
            </ul>
-        </div>
+        </nav>
+        <!-- End main menu -->
     </header>
     <main>
+        <!-- card zone -->
         <h1 class="title-main">Aqui va el titulo de la web</h1>
         <div class="card-in">
             <div class="card">
@@ -47,7 +55,18 @@
                 <div class="button-card"><a href="#">Ver ahora</a></div>
             </div>
         </div>
+        <!-- End card zone -->
     </main>
-    <footer></footer>
+    <!-- section zone -->
+    <section>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi temporibus hic nihil sint fugit, iste facilis quaerat sit tenetur vero quasi consequuntur optio magni consequatur rerum, assumenda est expedita dolore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore impedit minima, tenetur odio omnis aliquid inventore mollitia doloribus recusandae rem deleniti cupiditate at laudantium provident corrupti quod ipsum distinctio porro!</p>
+    </section>
+    <!-- End section zone-->
+    <!-- footer zone-->
+    <footer>
+        <p>2024 HTML, CSS Práctica</p>
+    </footer>
+    <!-- End footer zone -->
 </body>
 </html>
