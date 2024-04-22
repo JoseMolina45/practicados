@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear un Menu</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/scripts.js"></script>
+    <style>
+    main{
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 0px auto;
+        margin-top: 50px;
+    }
+      .tabs {
+        overflow: hidden;
+        border-bottom: 1px solid var(--primary-color);
+      }
+
+      .tablinks {
+        background-color: #f2f2f2;
+        float: left;
+        border: 1px solid var(--primary-color);
+        outline: none;
+        cursor: pointer;
+        padding: 10px 15px;
+        transition: background-color 0.3s;
+      }
+
+      .tablinks.active {
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      .tabcontent {
+        display: none;
+        padding: 20px;
+        border: 1px solid var(--primary-color);
+      }
+
+      .tabcontent.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- main menu -->
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </div>
+      <nav class="menu">
+        <ul id="menu-click" class="">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="carrusel.html">Carrusel</a></li>
+            <li><a href="windows.html">Ventanas</a></li>
+            <li><a href="accordion.html">Acordeón</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+        </ul>
+      </nav>
+      <!-- End main menu -->
+    </header>
+    <main>
+      <div class="tabs">
+        <button class="tablinks active" onclick="openTab(event, 'tab1')">
+          Tab 1
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'tab2')">Tab 2</button>
+        <button class="tablinks" onclick="openTab(event, 'tab3')">Tab 3</button>
+      </div>
+
+      <div id="tab1" class="tabcontent active">
+        <h3>Contenido de la pestaña 1</h3>
+        <p>Este es el contenido de la primera pestaña.</p>
+      </div>
+
+      <div id="tab2" class="tabcontent">
+        <h3>Contenido de la pestaña 2</h3>
+        <p>Este es el contenido de la segunda pestaña.</p>
+      </div>
+
+      <div id="tab3" class="tabcontent">
+        <h3>Contenido de la pestaña 3</h3>
+        <p>Este es el contenido de la tercera pestaña.</p>
+      </div>
+
+      <script>
+        function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+    </main>
+  </body>
+</html>

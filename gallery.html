@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galería de imagenes</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/slider.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./js/scripts.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- main menu -->
-        <div class="menu-btn">
-            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-        </div>
-        <nav class="menu">
-            <ul id="menu-click" class="">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><span class="inactivo">Galería</span></li>
-                <li><a href="windows.html">Ventanas</a></li>
-                <li><a href="carrusel.html">Carrusel</a></li>
-                <li><a href="acordeon.html">Código</a></li>
-           </ul>
-        </nav>
-        <!-- End main menu -->
+      <!-- main menu -->
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </div>
+      <nav class="menu">
+        <ul id="menu-click" class="">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="carrusel.html">Carrusel</a></li>
+          <li><a href="windows.html">Ventanas</a></li>
+          <li><a href="accordion.html">Acordeón</a></li>
+          <li><a href="modal.html">Modal</a></li>
+          <li><a href="tabs.html">Tabs</a></li>
+        </ul>
+      </nav>
+      <!-- End main menu -->
     </header>
     <main class="center">
-        <!-- gallery zone -->
-        <h1 class="title-main">Una galería de imagenes</h1>
-        <div class="gallery">
-            <ul class="slider">
-                <li id="photo1"><img src="./img/concepto-collage-html-css-persona.jpg" /></li>
-                <li id="photo2"><img src="./img/escena-futurista-robot-alta-tecnologia-utilizado-industria-construccion.jpg" /></li>
-                <li id="photo3"><img src="./img/escena-negocios-futurista-ambiente-ultra-moderno.jpg" /></li>
-                <li id="photo4"><img src="./img/mano-futurista-trabajando-computadora-portatil.jpg" /></li>
-            </ul>
-            <nav class="nav">
-                <ul class="slider-menu">
-                    <li><a href="#photo1">Foto 1</a></li>
-                    <li><a href="#photo2">Foto 2</a></li>
-                    <li><a href="#photo3">Foto 3</a></li>
-                    <li><a href="#photo4">Foto 4</a></li>
-                </ul>
-            </nav>
-        </div>
+      <!-- gallery zone -->
+      <h1 class="title-main">Una galería de imagenes</h1>
+      <div class="gallery">
+        <ul class="slider">
+          <li id="photo1">
+            <img src="./img/concepto-collage-html-css-persona.jpg" />
+          </li>
+          <li id="photo2">
+            <img
+              src="./img/escena-futurista-robot-alta-tecnologia-utilizado-industria-construccion.jpg"
+            />
+          </li>
+          <li id="photo3">
+            <img
+              src="./img/escena-negocios-futurista-ambiente-ultra-moderno.jpg"
+            />
+          </li>
+          <li id="photo4">
+            <img
+              src="./img/mano-futurista-trabajando-computadora-portatil.jpg"
+            />
+          </li>
+        </ul>
+        <nav class="nav">
+          <ul class="slider-menu">
+            <li><a href="#photo1">Foto 1</a></li>
+            <li><a href="#photo2">Foto 2</a></li>
+            <li><a href="#photo3">Foto 3</a></li>
+            <li><a href="#photo4">Foto 4</a></li>
+          </ul>
+        </nav>
+      </div>
     </main>
-     <!-- End gallery zone -->
+    <!-- End gallery zone -->
     <!-- footer zone-->
     <footer>
-        <p>2024 HTML, CSS Práctica</p>
+      <p>2024 HTML, CSS Práctica</p>
     </footer>
     <!-- End footer zone -->
-</body>
+  </body>
 </html>
