@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear un Menu</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+    <script src="./js/scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- main menu -->
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </div>
+      <nav class="menu">
+        <ul id="menu-click" class="">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="carrusel.html">Carrusel</a></li>
+            <li><a href="windows.html">Ventanas</a></li>
+            <li><a href="accordion.html">Acordeón</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+        </ul>
+      </nav>
+      <!-- End main menu -->
+    </header>
+    <main>
+      <button id="modalBtn">Abrir Modal</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <p>Este es un ejemplo de modal.</p>
+        </div>
+      </div>
+      <script>
+       
+        document
+          .getElementById("modalBtn")
+          .addEventListener("click", function () {
+            document.getElementById("myModal").style.display = "block";
+          });
+
+       
+        document
+          .getElementById("closeModal")
+          .addEventListener("click", function () {
+            document.getElementById("myModal").style.display = "none";
+          });
+      </script>
+    </main>
+  </body>
+</html>

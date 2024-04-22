@@ -1,58 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/slider.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <style>
+    main {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+      .slider {
+        grid-area: carrousel;
+        background-color: white;
+        width: 700px;
+        display: flex;
+        overflow: hidden;
+        margin: 0px auto;
+        height: 500px;
+      }
+
+      .slider:hover img {
+        animation-play-state: paused;
+      }
+
+      .slider img {
+        
+        object-fit: cover;
+        animation: 8s linear infinite image-slider;
+      }
+      @keyframes image-slider {
+        0% {
+          transform: translateX(0);
+        }
+
+        31.33% {
+          transform: translateX(0%);
+        }
+
+        35% {
+          transform: translateX(-100%);
+        }
+
+        62.66% {
+          transform: translateX(-100%);
+        }
+
+        66.66% {
+          transform: translateX(-200%);
+        }
+
+        94% {
+          transform: translateX(-200%);
+        }
+
+        100% {
+          transform: translateX(-300%);
+        }
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <nav class="menu">
-           <ul>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><span class="inactivo">Carrusel</span></li>
-                <li><a href="windows.html">Ventanas</a></li>
-                <li><a href="acordeon.html">Código</a></li>
-                <li><a href="acordeon.html">Código</a></li>
-           </ul>
-           </ul>
-        </nav>
+      <nav class="menu">
+        <ul>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="carrusel.html">Carrusel</a></li>
+          <li><a href="windows.html">Ventanas</a></li>
+          <li><a href="accordion.html">Acordeón</a></li>
+          <li><a href="modal.html">Modal</a></li>
+          <li><a href="tabs.html">Tabs</a></li>
+          </ul>
+        </ul>
+      </nav>
     </header>
     <main>
-        <h1 class="title-main">Creando un carrusel</h1>
-        <ul class="slider">
-            <li><img src="./img/concepto-collage-html-css-persona.jpg" /></li>
-            <li><img src="./img/escena-futurista-robot-alta-tecnologia-utilizado-industria-construccion.jpg" /></li>
-            <li><img src="./img/escena-negocios-futurista-ambiente-ultra-moderno.jpg" /></li>
-        </ul>
-        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!</p>
-        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias, totam fugiat facilis vitae saepe iure similique ex mollitia laboriosam, cupiditate dolor sit dicta modi beatae dignissimos aspernatur repudiandae commodi.</p>
-        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!</p>
-        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!</p>
-        <div class="format-code">
-            <h4>HTML</h4>
-            <hr>
-            &lt;ul&gt;<br>
-                &lt;li&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt/li&gt<br>
-                &lt;li&gt;&lt;a href="menu.html"&gt;Menú&lt;/a&gt;&lt/li&gt<br>
-                &lt;li&gt;&lt;a href="#"&gt;Carrusel&lt;/a&gt;&lt/li&gt<br>
-                &lt;li&gt;&lt;a href ="#"&gt;Acordeón&lt;/a&gt;&lt/li&gt<br>
-           </ul>
-            <h4 class="code-h4">CSS</h4>
-            <hr>
-            <pre>ul li {
-                display: inline;
-                padding-left: 5px;
-                list-style-type: none;
-            }</pre>
-        </div>
-        
-        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!</p>
-        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus rerum perferendis inventore, hic itaque obcaecati porro culpa minima alias quos accusamus necessitatibus quis error illum nostrum vel voluptatum vitae exercitationem!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias, totam fugiat facilis vitae saepe iure similique ex mollitia laboriosam, cupiditate dolor sit dicta modi beatae dignissimos aspernatur repudiandae commodi.</p>
+      <h1 class="title-main">Creando un carrusel con CSS y HTML</h1>
+      <div class="slider">
+        <img src="./img/concepto-collage-html-css-persona.jpg" />
+        <img src="./img/escena-futurista-robot-alta-tecnologia-utilizado-industria-construccion.jpg" />
+        <img src="./img/escena-negocios-futurista-ambiente-ultra-moderno.jpg" />
+        <img src="./img/concepto-collage-html-css-persona.jpg" />
+        <img src="./img/escena-futurista-robot-alta-tecnologia-utilizado-industria-construccion.jpg" />
+        <img src="./img/escena-negocios-futurista-ambiente-ultra-moderno.jpg" />
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>

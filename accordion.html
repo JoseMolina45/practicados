@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <style>
+      main {
+        max-width: 1200px;
+        margin: 0px auto;
+        margin-top: 20px;
+      }
+      .accordion {
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+      }
+      .accordion li {
+        color: white;
+        list-style-type: none;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .accordion li :hover {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .accordion p {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="carrusel.html">Carrusel</a></li>
+          <li><a href="windows.html">Ventanas</a></li>
+          <li><a href="accordion.html">Acordeón</a></li>
+          <li><a href="modal.html">Modal</a></li>
+          <li><a href="tabs.html">Tabs</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="accordion"></div>
+      <ul class="accordion">
+        <li>Titulo 1</li>
+        <p style="display: none">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+          rerum perferendis inventore, hic itaque obcaecati porro culpa minima
+          alias quos accusamus necessitatibus quis error illum nostrum vel
+          voluptatum vitae exercitationem!, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim molestias, totam fugiat facilis
+          vitae saepe iure similique ex mollitia laboriosam, cupiditate dolor
+          sit dicta modi beatae dignissimos aspernatur repudiandae commodi.
+        </p>
+        <li>Titulo 2</li>
+        <p style="display: none">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+          rerum perferendis inventore, hic itaque obcaecati porro culpa minima
+          alias quos accusamus necessitatibus quis error illum nostrum vel
+          voluptatum vitae exercitationem!, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim molestias, totam fugiat facilis
+          vitae saepe iure similique ex mollitia laboriosam, cupiditate dolor
+          sit dicta modi beatae dignissimos aspernatur repudiandae commodi.
+        </p>
+        <li>Titulo 3</li>
+        <p style="display: none">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+          rerum perferendis inventore, hic itaque obcaecati porro culpa minima
+          alias quos accusamus necessitatibus quis error illum nostrum vel
+          voluptatum vitae exercitationem!, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim molestias, totam fugiat facilis
+          vitae saepe iure similique ex mollitia laboriosam, cupiditate dolor
+          sit dicta modi beatae dignissimos aspernatur repudiandae commodi.
+        </p>
+      </ul>
+    </main>
+    <script>
+      const accordions = document.querySelectorAll(".accordion li");
+      for (let i = 0; i < accordions.length; i++) {
+        accordions[i].addEventListener("click", function () {
+          let index = i;
+          for (let j = 0; j < accordions.length; j++) {
+            if (j == index) {
+              if (accordions[j].nextElementSibling.style.display == "flex") {
+                accordions[j].nextElementSibling.style.display = "none"
+              } else {
+                accordions[j].nextElementSibling.style.display = "flex";
+                accordions[j].style.backgroundColor = "var(--primary-color)";
+                accordions[j].style.color = "white";
+              }
+            } else {
+              accordions[j].nextElementSibling.style.display = "none";
+              accordions[j].style.backgroundColor = "white";
+              accordions[j].style.color = "var(--primary-color)";
+            }
+          }
+        });
+      }
+      console.log(accordions);
+    </script>
+  </body>
+</html>
