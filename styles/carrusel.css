@@ -1,0 +1,61 @@
+main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  .slider {
+    grid-area: carrousel;
+    background-color: white;
+    width: 700px;
+    display: flex;
+    overflow: hidden;
+    margin: 0px auto;
+    height: 500px;
+  }
+
+  .slider:hover img {
+    animation-play-state: paused;
+  }
+
+  .slider img {
+    object-fit: cover;
+    animation: 8s linear infinite image-slider;
+  }
+  
+  @media(max-width: 400px)  {
+    .slider {
+      height: 250px;
+      width: 300px;
+    }
+  }
+
+  @keyframes image-slider {
+    0% {
+      transform: translateX(0);
+    }
+
+    31.33% {
+      transform: translateX(0%);
+    }
+
+    35% {
+      transform: translateX(-100%);
+    }
+
+    62.66% {
+      transform: translateX(-100%);
+    }
+
+    66.66% {
+      transform: translateX(-200%);
+    }
+
+    94% {
+      transform: translateX(-200%);
+    }
+
+    100% {
+      transform: translateX(-300%);
+    }
+  }

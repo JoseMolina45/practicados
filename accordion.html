@@ -3,56 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/slider.css" />
-    <style>
-      main {
-        max-width: 1200px;
-        margin: 0px auto;
-        margin-top: 20px;
-      }
-      .accordion {
-        width: 100%;
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-      }
-      .accordion li {
-        color: white;
-        list-style-type: none;
-        text-align: center;
-        padding: 20px;
-        background-color: white;
-        color: var(--primary-color);
-        text-transform: uppercase;
-        font-weight: 700;
-        cursor: pointer;
-      }
-      .accordion li :hover {
-        background-color: var(--primary-color);
-        color: white;
-      }
-      .accordion p {
-        background-color: white;
-        color: var(--primary-color);
-        padding: 20px;
-        text-align: center;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./styles/accordion.css" />
+    <script src="./js/scripts.js"></script>
+    
+    
+      </head>
   <body>
     <header>
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="menu.html">Menú</a></li>
-          <li><a href="carrusel.html">Carrusel</a></li>
-          <li><a href="windows.html">Ventanas</a></li>
-          <li><a href="accordion.html">Acordeón</a></li>
-          <li><a href="modal.html">Modal</a></li>
-          <li><a href="tabs.html">Tabs</a></li>
-        </ul>
-      </nav>
+      <!-- main menu -->
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </div>
+    <nav class="menu">
+        <ul id="menu-click" class="">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="windows.html">Ventanas</a></li>
+            <li><a href="carrusel.html">Carrusel</a></li>
+            <li><span class="idle">Acordeón</span></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="navigator.html">Información</a></li>
+            <li><a href="filters.html">Filtros</a></li>
+       </ul>
+    </nav>
+    <!-- End main menu -->
     </header>
     <main>
       <div class="accordion"></div>
@@ -89,6 +67,11 @@
         </p>
       </ul>
     </main>
+     <!-- footer zone-->
+     <footer>
+      <p>2024 HTML, CSS Práctica</p>
+  </footer>
+  <!-- End footer zone -->
     <script>
       const accordions = document.querySelectorAll(".accordion li");
       for (let i = 0; i < accordions.length; i++) {
@@ -113,5 +96,6 @@
       }
       console.log(accordions);
     </script>
+
   </body>
 </html>

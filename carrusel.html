@@ -4,80 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/slider.css" />
-    <style>
-    main {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-      .slider {
-        grid-area: carrousel;
-        background-color: white;
-        width: 700px;
-        display: flex;
-        overflow: hidden;
-        margin: 0px auto;
-        height: 500px;
-      }
-
-      .slider:hover img {
-        animation-play-state: paused;
-      }
-
-      .slider img {
-        
-        object-fit: cover;
-        animation: 8s linear infinite image-slider;
-      }
-      @keyframes image-slider {
-        0% {
-          transform: translateX(0);
-        }
-
-        31.33% {
-          transform: translateX(0%);
-        }
-
-        35% {
-          transform: translateX(-100%);
-        }
-
-        62.66% {
-          transform: translateX(-100%);
-        }
-
-        66.66% {
-          transform: translateX(-200%);
-        }
-
-        94% {
-          transform: translateX(-200%);
-        }
-
-        100% {
-          transform: translateX(-300%);
-        }
-      }
-    </style>
+    <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./styles/carrusel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
   </head>
   <body>
     <header>
+      <!-- main menu -->
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </div>
       <nav class="menu">
-        <ul>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-          <li><a href="menu.html">Menú</a></li>
-          <li><a href="carrusel.html">Carrusel</a></li>
-          <li><a href="windows.html">Ventanas</a></li>
-          <li><a href="accordion.html">Acordeón</a></li>
-          <li><a href="modal.html">Modal</a></li>
-          <li><a href="tabs.html">Tabs</a></li>
-          </ul>
-        </ul>
-      </nav>
-    </header>
+        <ul id="menu-click" class="">
+            <li><a href="index.html">Inicio</span></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="windows.html">Ventanas</a></li>
+            <li><span class="idle">Carrusel</span></li>
+            <li><a href="accordion.html">Acordeón</a></li>
+            <li><a href="modal.html">Modal</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="navigator.html">Información</a></li>
+            <li><a href="filters.html">Filtros</a></li>
+       </ul>
+    </nav>
+      <!-- End main menu -->
+  </header>
+
     <main>
       <h1 class="title-main">Creando un carrusel con CSS y HTML</h1>
       <div class="slider">
@@ -89,5 +43,10 @@
         <img src="./img/escena-negocios-futurista-ambiente-ultra-moderno.jpg" />
       </div>
     </main>
+    <!-- footer zone-->
+    <footer>
+      <p>2024 HTML, CSS Práctica</p>
+  </footer>
+  <!-- End footer zone -->
   </body>
 </html>

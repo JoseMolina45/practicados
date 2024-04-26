@@ -1,0 +1,32 @@
+main {
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+  .accordion {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .accordion li {
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .accordion li :hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .accordion p {
+    background-color: white;
+    color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+  }
