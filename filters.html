@@ -33,7 +33,27 @@
         <!-- End main menu -->
     </header>
     <main>
-       
+       <h1 class="title-main title-main-filter">Aplicar filtros a imágenes</h1>
+       <div class="form-filter">
+            <div>
+            <label>Filtro: </label>
+            <select name="filter" id="filter">
+                <option value="0">Original</option>
+                <option value="1">Tono</option>
+                <option value="2">Escala de grises</option>
+                <option value="3">Brillo</option>
+                <option value="4">Contraste</option>
+                <option value="5">Negativo</option>
+                <option value="6">Desenfoque</option>
+                <option value="7">Sepia</option>
+            </select>
+            <input type="range" id="btn-range" min="10" max="200" />
+            <button name="btn-filter" id="btn-filter" onclick="applyfilters()">Aplicar</button> 
+            </div>
+            <div class="image-filter" id="img-f">
+                <img class="img-filter" src="./img/escena-negocios-futurista-ambiente-ultra-moderno.jpg" />
+            </div>
+       </div>
     </main>
     <footer>
         <p>2024 HTML, CSS Práctica</p>

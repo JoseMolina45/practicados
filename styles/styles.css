@@ -17,7 +17,7 @@ header {
 }
 
 body {
-    background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to left, var(--secondary-color), var(--tertiary-color));
 }
 
 .menu {
@@ -50,7 +50,7 @@ body {
     margin-top: 50px;
     margin-left: 50px;
     border: 1px solid var(--primary-color);
-    box-shadow: 2px 2px 8px 4px var(--tertiary-color);
+    box-shadow: 2px 2px 8px 4px var(--primary-color);
     border-radius: 5px;;
     width: 250px;
     background-color: white;
@@ -103,6 +103,7 @@ a:hover {
     margin: 0 auto;
     border-radius: 5px;
     padding: 15px;
+    box-shadow: 2px 2px 8px 4px var(--primary-color);
 }
 
 .format-code hr {
@@ -142,6 +143,45 @@ footer {
 
 footer p {
     padding: 5px;
+}
+
+.form-filter {
+    color: white;
+    background-color: var(--primary-color);
+    width: 420px;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.title-main-filter {
+    margin-bottom: 30px;
+}
+
+ select {
+    height: 20px;
+    border-radius: 5%;
+    border-style: none;
+    
+} 
+
+.img-filter {
+    margin-top: 30px;
+    width: 400px;
+}
+
+#btn-filter {
+    width: 80px;
+    height: 30px;
+    margin-left: 20px; 
+    
+}
+
+#btn-range {
+    margin-left: 20px;
+    width: 100px;
+    
 }
 
 @media(max-width: 1024px)  {
@@ -236,5 +276,35 @@ footer p {
         transform: translateX(0px) !important;
     }
 
+    .form-filter {
+        width: 330px;
+        height: 320px;
+        
+    }
     
+    .title-main-filter {
+        margin-bottom: 30px;
+    }
+    
+     select {
+        height: 20px;
+        border-radius: 5%;
+        border-style: none;
+    } 
+    
+    .img-filter {
+        margin-top: 30px;
+        width: 300px;
+    }
+    
+    #btn-filter {
+        width: 80px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    
+       
 }

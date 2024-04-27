@@ -29,6 +29,7 @@
     border-radius: 5px;
     padding: 15px;
     opacity: 1 !important;
+    box-shadow: 2px 2px 8px 4px var(--primary-color);
 }
 
 .view button {
