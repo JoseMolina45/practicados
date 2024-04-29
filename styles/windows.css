@@ -12,10 +12,10 @@
     z-index: 1;
     position: absolute;
     top: 50px;
-    left: 650px;
+    left: 400px;
     transform: translateX(-50%);
     opacity: 0;
-    
+    width: 250px;
 }
 
 #openWin img {

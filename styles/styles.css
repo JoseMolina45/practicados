@@ -184,6 +184,66 @@ footer p {
     
 }
 
+.player {
+    display: flex;
+    justify-content: center;  
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.view-player {
+    font-size: 30px;
+    width: 100px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.player a {
+    color: var(--primary-color);
+}
+
+.player a:hover {
+    color: var(--primary-color);
+    
+}
+
+.player i {
+    padding: 10px;
+}
+
+.imgend {
+    display: flex;
+    justify-content: center;
+}
+
+.img-end {
+    margin-top: 30px;
+    width: 600px;
+}
+
+#father {
+    position: relative;
+}
+
+#child {
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    color: goldenrod;
+}
+
+#winner {
+    font-size: 250px;
+}
+
+
 @media(max-width: 1024px)  {
     .card-in {
         display: flex;
@@ -306,5 +366,20 @@ footer p {
         
     }
     
-       
+    .img-end {
+        margin-top: 30px;
+        width: 300px;
+    }
+    
+    #child {
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        color: goldenrod;
+    }
+
+    #winner {
+        font-size: 130px;
+    }
+    
 }
